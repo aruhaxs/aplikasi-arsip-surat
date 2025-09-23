@@ -38,11 +38,12 @@
                     <td>{{ $surat->judul }}</td>
                     <td>{{ $surat->created_at->format('Y-m-d H:i:s') }}</td>
                     <td>
-                        <form action="{{ route('surat.destroy', $surat->id) }}" method="POST" onsubmit="return confirm('Apakah Anda yakin ingin menghapus surat ini?');" style="display: inline;">
+                        <form id="delete-form-{{ $surat->id }}" action="{{ route('surat.destroy', $surat->id) }}" method="POST" style="display: none;">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="btn btn-danger">Hapus</button>
                         </form>
+                        <button type="button" class="btn btn-danger" onclick="confirmDelete('delete-form-{{ $surat->id }}')">Hapus</button>
+                        
                         <a href="{{ route('surat.download', $surat->id) }}" class="btn btn-warning">Unduh</a>
                         <a href="{{ route('surat.show', $surat->id) }}" class="btn btn-info">Lihat >></a>
                     </td>
@@ -54,7 +55,7 @@
             @endforelse
         </tbody>
     </table>
-
+    
     <br>
     <a href="{{ route('surat.create') }}" class="btn btn-primary">Arsipkan Surat...</a>
 @endsection

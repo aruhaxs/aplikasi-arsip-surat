@@ -4,8 +4,42 @@ Aplikasi web sederhana yang dibangun menggunakan framework Laravel untuk melakuk
 
 ## Screenshot
 
-*(YATTTA ASESOR KU MANTAP)*
+<ol>
 
+### 1. Melihat data kategori
+<img src="./public/img/ss/indexkategori.png" alt="Melihat data kategori">
+
+### 2. Menambahkan data kategori
+<img src="./public/img/ss/addkategori.png" alt="Menambahkan data kategori">
+
+### 3. Mengedit data kategori
+<img src="./public/img/ss/editkategori.png" alt="Mengedit data kategori">
+
+### 4. Menghapus data kategori
+<img src="./public/img/ss/delkategori.png" alt="Menghapus data kategori">
+
+### 5. Melakukan Pencarian Surat
+<img src="./public/img/ss/searchsurat.png" alt="Melakukan Pencarian Surat">
+
+### 6. Melihat surat yang diarsipkan
+<img src="./public/img/ss/indexsurat.png" alt="Melihat surat yang diarsipkan">
+
+### 7. Menambahkan data surat
+<img src="./public/img/ss/addsurat.png" alt="Menambahkan data surat">
+
+### 8. Mengedit data surat
+<img src="./public/img/ss/editsurat.png" alt="Mengedit data surat">
+
+### 9. Menghapus data surat
+<img src="./public/img/ss/delsurat.png" alt="Menghapus data surat">
+
+### 10. Mengunduh Surat
+<img src="./public/img/ss/unduhsurat.png" alt="Mengunduh Surat">
+
+### 11. Halaman About
+<img src="./public/img/ss/about.png" alt="Halaman About">
+
+</ol>
 
 ---
 

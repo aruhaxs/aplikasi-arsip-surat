@@ -17,7 +17,7 @@
                 <th style="width: 5%;">ID Kategori</th>
                 <th>Nama Kategori</th>
                 <th>Keterangan</th>
-                <th style="width: 15%;">Aksi</th>
+                <th style="width: 20%;">Aksi</th>
             </tr>
         </thead>
         <tbody>
@@ -27,11 +27,12 @@
                     <td>{{ $kategori->nama_kategori }}</td>
                     <td>{{ $kategori->keterangan }}</td>
                     <td>
-                        <form action="{{ route('kategori.destroy', $kategori->id) }}" method="POST" onsubmit="return confirm('Menghapus kategori akan menghapus semua surat yang terkait. Apakah Anda yakin?');" style="display: inline;">
+                        <form id="delete-form-kategori-{{ $kategori->id }}" action="{{ route('kategori.destroy', $kategori->id) }}" method="POST" style="display: none;">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="btn btn-danger">Hapus</button>
                         </form>
+                        <button type="button" class="btn btn-danger" onclick="confirmDelete('delete-form-kategori-{{ $kategori->id }}')">Hapus</button>
+                        
                         <a href="{{ route('kategori.edit', $kategori->id) }}" class="btn btn-warning">Edit</a>
                     </td>
                 </tr>
